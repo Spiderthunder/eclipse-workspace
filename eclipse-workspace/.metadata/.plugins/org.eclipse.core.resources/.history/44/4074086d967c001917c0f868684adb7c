@@ -1,0 +1,57 @@
+package numerotelefono;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class NumeroDiTelefono {
+	//variabili
+int prefissoInternazionale,prefissoNazionale,numero;
+
+//metodi
+
+public  NumeroDiTelefono (String numeroCompleto) {
+	List<String> numeroPrefissi =new ArrayList<String>();
+	
+	if(numeroPrefissi.size()==2) {
+		this.prefissoNazionale= Integer.parseInt(numeroPrefissi.get(0));
+		this.numero=Integer.parseInt(numeroPrefissi.get(1));
+	}
+//	this.prefissoInteranzionale=prefissoInteranzionale;
+//	this.prefissoNazionale=prefissoNazionale;
+//	this.numero=numero;
+	if(numeroPrefissi.size()==3) {
+		this.prefissoNazionale= Integer.parseInt(numeroPrefissi.get(0));
+		this.numero=Integer.parseInt(numeroPrefissi.get(1));
+		this.numero=Integer.parseInt(numeroPrefissi.get(2));
+	}
+	else {
+		System.out.println("Formato non corretto!!");
+	}
+	
+}
+
+public List<String> toString(String numeroCompleto){
+	List<String> numeroPrefissi =new ArrayList<String>();
+	
+	String[] arrayStringhe = numeroCompleto.split("-");
+	
+	
+	
+	numeroPrefissi=Arrays.asList(arrayStringhe);
+	//oppure
+	
+	//for (int i=0; i<arrayStringhe.length; i++) {     length restituisce lunghezza array
+		//numeroPrefissi.add(i,arrayStringhe[i] );
+		
+	//}
+	
+	return numeroPrefissi;
+	
+}
+public String toString() {
+	String numeroOutput = " ";
+	//numeroOutput = prefissoInternazionale
+	return numeroOutput;
+}
+}
