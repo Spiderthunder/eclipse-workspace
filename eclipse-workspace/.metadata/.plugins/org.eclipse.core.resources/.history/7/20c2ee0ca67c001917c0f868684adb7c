@@ -30,16 +30,15 @@ public class Mainnumerotelefono {
 		try {
 			letturaFile=new Scanner(fileInput);
 			System.out.println("File letto correttamente");
-			int i=0;
-			
+			int i=0; 
 			while(letturaFile.hasNextLine()) {
 				//NumeroDiTelefono numero= new NumeroDiTelefono(letturaFile.nextline());
 
 
 				ListaNumeri.add(new NumeroDiTelefono(letturaFile.nextLine()));
-
+			
 				i++;
-			}
+				}
 			StampaLista(ListaNumeri);
 			System.out.println("\nVuoi apportare qualche modifica alla rubrica? (y/n)");
 			String continua= tastiera.nextLine();
@@ -67,16 +66,6 @@ public class Mainnumerotelefono {
 					System.out.println("ATTENZIONE POSSIBILITà NON CONSENTITA!!!");
 					break;
 				}
-
-
-				StampaLista(ListaNumeri);
-			}
-
-			else  if(continua.equalsIgnoreCase("n")) {
-				System.out.println("Arrivederci");
-			}
-			else {
-				System.out.println("Valore inserito non valido");
 			}
 
 		} catch (FileNotFoundException e) {
@@ -96,7 +85,7 @@ public class Mainnumerotelefono {
 		for(int i=0; i<listaDaStampare.size();i++) {
 			j=i+1;
 			System.out.println(j+")"+listaDaStampare.get(i).toString());
-
+			
 		}
 
 	}

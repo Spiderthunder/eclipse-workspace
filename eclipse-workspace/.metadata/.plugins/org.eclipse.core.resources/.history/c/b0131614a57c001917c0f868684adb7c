@@ -30,17 +30,16 @@ public class Mainnumerotelefono {
 		try {
 			letturaFile=new Scanner(fileInput);
 			System.out.println("File letto correttamente");
-			int i=0;
-			
+			int i=0, j=i+1;
 			while(letturaFile.hasNextLine()) {
 				//NumeroDiTelefono numero= new NumeroDiTelefono(letturaFile.nextline());
 
 
 				ListaNumeri.add(new NumeroDiTelefono(letturaFile.nextLine()));
-
+				System.out.println(j+")"+ListaNumeri.get(i).toString());
 				i++;
+				j++;
 			}
-			StampaLista(ListaNumeri);
 			System.out.println("\nVuoi apportare qualche modifica alla rubrica? (y/n)");
 			String continua= tastiera.nextLine();
 			if(continua.equalsIgnoreCase("y")) {
@@ -50,7 +49,7 @@ public class Mainnumerotelefono {
 				switch (scelta) {
 				case 1:
 					System.out.println("scrivi numero da inserire:");//Aggiungi numero
-					ListaNumeri.add(new NumeroDiTelefono(tastiera.next()));
+					ListaNumeri.add(new NumeroDiTelefono(tastiera.nextLine()));
 					break;
 				case 2:
 					System.out.println("quale numero vuoi cancellare?");//Cancella numero
@@ -61,22 +60,12 @@ public class Mainnumerotelefono {
 					System.out.println("inserire la posizione del numero da modificare?");//Modifica numero
 					int indice=tastiera.nextInt();
 					System.out.println("inserire il nuovo numero");
-					ListaNumeri.set(indice -1,new NumeroDiTelefono(tastiera.next()));
+					ListaNumeri.set(indice -1,new NumeroDiTelefono(tastiera.nextLine()));
 					break;
 				default:
 					System.out.println("ATTENZIONE POSSIBILITà NON CONSENTITA!!!");
 					break;
 				}
-
-
-				StampaLista(ListaNumeri);
-			}
-
-			else  if(continua.equalsIgnoreCase("n")) {
-				System.out.println("Arrivederci");
-			}
-			else {
-				System.out.println("Valore inserito non valido");
 			}
 
 		} catch (FileNotFoundException e) {
@@ -96,7 +85,6 @@ public class Mainnumerotelefono {
 		for(int i=0; i<listaDaStampare.size();i++) {
 			j=i+1;
 			System.out.println(j+")"+listaDaStampare.get(i).toString());
-
 		}
 
 	}
