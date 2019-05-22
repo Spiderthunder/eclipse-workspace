@@ -1,0 +1,20 @@
+package cubo;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+
+		Misure m=new Misure();
+
+		m.setLunghezza(3);
+		m.getLunghezza();
+		m.setAltezza(5);
+		m.getAltezza();
+		m.setLarghezza(4);
+		m.getLarghezza();
+		m.VisualizzaVolume();
+
+	}
+
+}

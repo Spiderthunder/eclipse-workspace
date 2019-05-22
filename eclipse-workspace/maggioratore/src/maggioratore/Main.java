@@ -1,0 +1,13 @@
+package maggioratore;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Maggioratore p= new Maggioratore();
+		
+		
+		System.out.println(p.DammiMassimo(5,2,10,6));
+
+}
+}

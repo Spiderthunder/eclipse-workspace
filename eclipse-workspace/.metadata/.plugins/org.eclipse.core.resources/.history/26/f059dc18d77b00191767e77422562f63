@@ -1,0 +1,10 @@
+package numerotelefono;
+
+public class Mainnumerotelefono {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

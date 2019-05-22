@@ -1,0 +1,24 @@
+package cubo;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Scanner s=new Scanner(System.in);
+
+		Misure m=new Misure();
+
+		m.setLunghezza(s.nextInt());
+		m.getLunghezza();
+		m.setAltezza(s.nextInt());
+		m.getAltezza();
+		m.setLarghezza(s.nextInt());
+		m.getLarghezza();
+		m.VisualizzaVolume();
+		
+
+	}
+
+}

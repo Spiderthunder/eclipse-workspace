@@ -1,0 +1,54 @@
+package numerotelefono;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Mainnumerotelefono {
+
+	public static void main(String[] args) {
+
+		//variabili
+		Scanner tastiera=new Scanner(System.in);
+		String nomeFile;
+		Scanner letturaFile;
+		//-------------------------------------------
+		
+		List<Double> miaLista=new ArrayList<Double>();
+		miaLista.add(0, 0.3);//aggiungi valore
+		miaLista.set(2, 0.4);//modifica valore
+		Double a=miaLista.get(0); //prende un valore lista
+		
+		//vettore----------------------------------
+		
+		Double[] vettoreDouble= new Double[4];
+		vettoreDouble[0]=0.3;
+		
+		
+		//lettura file input
+		System.out.println("BENVENUTI IN RUBRICA");
+		System.out.println("\ninserire nome file input con estensione (es:\"file.txt\")");
+
+		nomeFile=tastiera.nextLine();
+
+		File fileInput= new File("input"+File.separator+nomeFile);
+		try {
+			letturaFile=new Scanner(fileInput);
+			System.out.println("File letto correttamente");
+			while(letturaFile.hasNextLine()) {
+				System.out.println(letturaFile.nextLine());
+				
+
+			}
+		} catch (FileNotFoundException e) {
+			
+			System.err.println("sei Serena");
+		}
+
+		System.out.println("Fine programma!");
+		tastiera.close();
+	}
+
+}

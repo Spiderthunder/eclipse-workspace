@@ -1,0 +1,7 @@
+package org.protor.sandbox.Aromano;
+
+public enum VehicleType {
+	AERIAL,
+	TERRESTRIAL,
+	MARINE
+}

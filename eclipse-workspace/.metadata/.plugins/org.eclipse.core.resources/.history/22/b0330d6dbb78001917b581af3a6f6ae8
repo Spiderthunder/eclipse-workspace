@@ -1,0 +1,28 @@
+package conto;
+
+public class Main {
+
+	public static void main(String[] args) {
+		ContoBancario c=new ContoBancario(0, 0, 0, null, null, null, null);
+		c.setNumeroconto(132);
+		c.getNumeroconto();
+		c.AperturaConto();
+		c.setSaldo(1200);
+		c.getSaldo();
+		c.setNomecliente("Andrea");
+		c.getNomecliente();
+		c.setNomeindirizzo("centro chiaia");
+		c.getNomeindirizzo();
+		c.setTipoconto("postpay");
+		c.getTipoconto();
+		c.setData("17/05/2019");
+		c.getData();
+		c.setTassointeresse(12);
+		c.getTassointeresse();
+		c.ChiusuraConto();
+		c.Versamento();
+		
+
+	}
+
+}

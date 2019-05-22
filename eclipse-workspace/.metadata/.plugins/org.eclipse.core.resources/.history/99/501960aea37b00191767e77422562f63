@@ -1,0 +1,18 @@
+package org.protor.sandbox.Aromano;
+
+import org.protor.sandbox.EnumEngineType;
+
+public abstract class AbstractMarineVehicle extends AbstractVehicle {
+
+	public AbstractMarineVehicle(EnumEngineType type) {
+		super(type);
+		
+	}
+
+	public AbstractMarineVehicle(String name, EnumEngineType type) {
+		super(name, type);
+	
+	}
+	
+
+}

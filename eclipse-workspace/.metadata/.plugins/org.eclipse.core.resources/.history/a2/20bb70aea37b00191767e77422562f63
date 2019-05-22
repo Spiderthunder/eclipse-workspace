@@ -1,0 +1,19 @@
+package org.protor.sandbox.Aromano;
+
+import org.protor.sandbox.EnumEngineType;
+
+public abstract class AerialVehicle extends AbstractVehicle {
+
+	public AerialVehicle(EnumEngineType type) {
+		super(type);
+	
+	}
+
+	public AerialVehicle(String name, EnumEngineType type) {
+		super(name, type);
+	
+	}
+	
+	
+
+}

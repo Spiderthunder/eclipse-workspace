@@ -1,0 +1,36 @@
+package cubo;
+
+public class Misure {
+
+	private int Lunghezza;
+	private int Larghezza;
+	private int Altezza;
+
+	public void setLunghezza(int lun) {
+		Lunghezza=lun;
+		System.out.println("lunghezza:"+Lunghezza);
+	}
+
+	public void setLarghezza(int Larg) {
+		Larghezza=Larg;
+		System.out.println("larghezza:"+Larghezza);
+	}
+
+	public void setAltezza(int Alt) {
+		Altezza=Alt;
+		System.out.println("Altezza:"+Altezza)	}
+
+	public int getLunghezza() {
+		return Lunghezza;
+		
+	}
+	public int getLarghezza() {
+		return Larghezza;
+	}
+	public int getAltezza() {
+		return Altezza;
+	}
+public void VisualizzaVolume() {
+	System.out.println("il volume è:"+Lunghezza*Larghezza*Altezza);
+}
+}

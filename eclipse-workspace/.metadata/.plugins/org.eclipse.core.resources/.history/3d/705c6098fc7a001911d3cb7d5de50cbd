@@ -1,0 +1,24 @@
+package scanner;
+
+public class Scanner {
+
+	public static void main(String[] args) {
+		
+		//Istanzia scanner con standard input
+		Scanner scan = new Scanner(System.in);
+		 
+		//Chiede di introdurre nome e cognome
+		System.out.println("Introduci nome e cognome:");
+		String nomeCognome = scan.next(); //qui il programma attende l'immissione dei dati
+		 
+		//Chiede di introdurre la città
+		System.out.println("Introduci città:");
+		String citta = scan.next(); 
+		 
+		System.out.println("Nome e cognome : " + nomeCognome);
+		System.out.println("Città : " + citta);
+		
+
+	}
+
+}

@@ -1,0 +1,29 @@
+package org.protor.sandbox.Aromano;
+
+import org.protor.sandbox.EnumEngineType;
+
+public class AbstractVehicle {
+	
+	private String name = "";
+
+	private EnumEnginetype engineType= EnumEngineType.NONE; 
+	
+	public AbstractVehicle(EnumEngineType type) {
+		this.engineType = type;
+	}
+	public AbstractVehicle(String name, EnumEngineType type) {
+		this.name = name;
+		this.engineType = type;
+	}
+
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	
+
+
+}

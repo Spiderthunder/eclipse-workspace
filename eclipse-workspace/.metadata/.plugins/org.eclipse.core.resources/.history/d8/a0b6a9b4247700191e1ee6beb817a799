@@ -1,0 +1,21 @@
+package maggioratore;
+
+public class Maggioratore {
+	public int DammiMassimo(int x,int y,int z,int w){
+		
+		if(x>y & x>z & x>w) {
+			System.out.println("il valore massimo è x");
+		}
+		if(z>y & z>x & z>w) {
+			System.out.println("il valore massimo è z");
+		}
+		if(y>x & y>z & y>w) {
+			System.out.println("il valore massimo è y");
+		}
+		
+		if(w>y & w>x & w>z) {
+			System.out.println("il valore massimo è w");
+		}
+		return 0;
+}
+}
